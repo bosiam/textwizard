@@ -1194,3 +1194,404 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1418274934.9161
     'REQUEST_TIME' => 1418274934
 ]
+2014-12-11 09:15:12 [127.0.0.1][-][uv1hlvgi5100c0ml2mvgqlp940][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:15:11 [127.0.0.1][-][uv1hlvgi5100c0ml2mvgqlp940][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '64870'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/textwizard/trunk/web/'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418285710.887
+    'REQUEST_TIME' => 1418285710
+]
+2014-12-11 09:33:52 [127.0.0.1][-][ciffsqriubqr1460g4pqb9avh5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:33:51 [127.0.0.1][-][ciffsqriubqr1460g4pqb9avh5][info][application] $_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65091'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/textwizard/trunk/web/'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418286831.345
+    'REQUEST_TIME' => 1418286831
+]
+2014-12-11 09:38:38 [127.0.0.1][-][utau8rsej6tb8vrhdr3q5mmc07][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:38:38 [127.0.0.1][-][utau8rsej6tb8vrhdr3q5mmc07][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/textwizard/trunk/web/'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/textwizard/trunk/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418287118.065
+    'REQUEST_TIME' => 1418287118
+]
+2014-12-11 09:39:12 [127.0.0.1][-][dccg9tgrkq9716ra5t4pp9n5k3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:39:12 [127.0.0.1][-][dccg9tgrkq9716ra5t4pp9n5k3][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/textwizard/trunk/web/'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/textwizard/trunk/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418287152.772
+    'REQUEST_TIME' => 1418287152
+]
+2014-12-11 09:39:15 [127.0.0.1][-][t8q8tehs8q9232v42iv5mddub3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:39:14 [127.0.0.1][-][t8q8tehs8q9232v42iv5mddub3][info][application] $_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/textwizard/trunk/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/textwizard/trunk/web/index.php'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418287154.879
+    'REQUEST_TIME' => 1418287154
+]
+2014-12-11 09:42:07 [127.0.0.1][-][q1k33djso52do5ql6p8i5984t5][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 4419 of 6046 bytes' 
+
+in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile()
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect()
+#3 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch()
+#4 {main}
+2014-12-11 09:42:07 [127.0.0.1][-][q1k33djso52do5ql6p8i5984t5][info][application] $_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/textwizard/trunk/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/textwizard/trunk/web/index.php'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418287327.203
+    'REQUEST_TIME' => 1418287327
+]
+2014-12-11 09:52:19 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-bootstrap\Nav.php:150
+Stack trace:
+#0 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-bootstrap\Nav.php(132): yii\bootstrap\Nav->renderItem(Array)
+#1 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2-bootstrap\Nav.php(117): yii\bootstrap\Nav->renderItems()
+#2 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Widget.php(96): yii\bootstrap\Nav->run()
+#3 D:\upupw\htdocs\textwizard\trunk\views\layouts\main.php(47): yii\base\Widget::widget(Array)
+#4 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\View.php(325): require('D:\\upupw\\htdocs...')
+#5 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\upupw\\htdocs...', Array)
+#6 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\View->renderFile('D:\\upupw\\htdocs...', Array, Object(app\controllers\SiteController))
+#7 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Controller.php(368): yii\base\Controller->renderContent('<div class="sit...')
+#8 D:\upupw\htdocs\textwizard\trunk\controllers\SiteController.php(52): yii\base\Controller->render('index')
+#9 [internal function]: app\controllers\SiteController->actionIndex()
+#10 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#13 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#14 D:\upupw\htdocs\textwizard\trunk\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\upupw\htdocs\textwizard\trunk\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2014-12-11 09:52:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs:32:\"ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://127.0.0.1/textwizard/trunk/web/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=841eecd557f2ca59de4b0b96b168d388450c2f32db29e2fa5a7e2b3b7dd47d0fs%3A32%3A%22ikNOoGypeeg8IF3-FfzJ20IuLIOu89X1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files\\Common Files\\NetSarang;C:\\Program Files\\Dell\\DW WLAN Card;;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\DMIX;C:\\Program Files\\NTRU Cryptosystems\\NTRU TCG Software Stack\\bin\\;C:\\Program Files\\Intel\\Services\\IPT\\;D:\\Program Files\\Subversion\\bin;D:\\Program Files\\TortoiseSVN\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/upupw/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/upupw/htdocs/textwizard/trunk/web/index.php'
+    'REMOTE_PORT' => '65249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/textwizard/trunk/web/index.php'
+    'SCRIPT_NAME' => '/textwizard/trunk/web/index.php'
+    'PHP_SELF' => '/textwizard/trunk/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418287939.166
+    'REQUEST_TIME' => 1418287939
+]

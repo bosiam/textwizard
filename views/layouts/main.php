@@ -33,11 +33,20 @@ AppAsset::register($this);
                 ],
             ]);
             echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
+                'options' => ['class' => 'navbar-nav'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => 'About', 'url' => ['/site/about']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
+                    ['options' => ['class'=>'dropdown'],'label' => 'Contact', 'url' => ['/site/contact']],
+                    [
+                        'label' => 'Dropdown',
+                        'items' => [
+                             ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
+                             '<li class="divider"></li>',
+                             '<li class="dropdown-header">Dropdown Header</li>',
+                             ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                        ],
+                    ],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',

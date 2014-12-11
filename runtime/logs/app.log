@@ -1,0 +1,1196 @@
+2014-12-10 06:50:26 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-10 06:50:26 [61.135.152.211][-][-][info][application] $_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/textwizard/web/index.php'
+    'REQUEST_URI' => '/textwizard/web/index.php'
+    'DOCUMENT_URI' => '/textwizard/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '56843'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '123.57.65.230'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/textwizard/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1418194226.382
+    'REQUEST_TIME' => 1418194226
+]
+2014-12-10 08:59:17 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-10 08:59:17 [61.135.152.211][-][-][info][application] $_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60475'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418201957.7908
+    'REQUEST_TIME' => 1418201957
+]
+2014-12-10 09:00:51 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:67
+2014-12-10 09:00:51 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ekm5o85cndh858udsa7pr8l3c4'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60514'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ekm5o85cndh858udsa7pr8l3c4'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202051.8021
+    'REQUEST_TIME' => 1418202051
+]
+2014-12-10 09:01:00 [61.135.152.211][100][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-10 09:01:00 [61.135.152.211][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60515'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202060.8966
+    'REQUEST_TIME' => 1418202060
+]
+2014-12-10 09:01:05 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 09:01:05 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 09:01:05 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60515'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202065.5125
+    'REQUEST_TIME' => 1418202065
+]
+2014-12-10 09:01:13 [61.135.152.211][100][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-10 09:01:13 [61.135.152.211][100][-][info][application] $_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60515'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202073.8584
+    'REQUEST_TIME' => 1418202073
+]
+2014-12-10 09:01:22 [61.135.152.211][100][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:94
+2014-12-10 09:01:22 [61.135.152.211][100][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fabout'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60515'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202082.1908
+    'REQUEST_TIME' => 1418202082
+]
+2014-12-10 09:01:37 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 09:01:37 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 09:01:37 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60515'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418202097.9228
+    'REQUEST_TIME' => 1418202097
+]
+2014-12-10 10:54:15 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 10:54:15 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 10:54:15 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '65047'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418208855.1812
+    'REQUEST_TIME' => 1418208855
+]
+2014-12-10 10:54:27 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 10:54:27 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 10:54:27 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '65047'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418208867.2961
+    'REQUEST_TIME' => 1418208867
+]
+2014-12-10 10:54:29 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 10:54:29 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 10:54:29 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s:32:\"rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB\";'
+    'PHPSESSID' => 'ns1p66t7eq5trq26k85ln1d5c2'
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '65047'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Fabout'
+    'HTTP_COOKIE' => '_csrf=b445b6a90294c509303d7990a8b2e6a4f1d8e7913f95405eec1ef2b87406ba22s%3A32%3A%22rp-JNpcmr9IEVeXMmkWfFbRd7g2vDJJB%22%3B; PHPSESSID=ns1p66t7eq5trq26k85ln1d5c2; _identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418208869.201
+    'REQUEST_TIME' => 1418208869
+]
+2014-12-10 11:00:39 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 11:00:39 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 11:00:38 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '65129'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418209238.9564
+    'REQUEST_TIME' => 1418209238
+]
+2014-12-10 11:00:51 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 11:00:51 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-10 11:00:51 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+    'PHPSESSID' => 'el2mi3a2tu7ffh3oeorn1d9h55'
+    '_csrf' => 'f26863dcf8787d805cb4531c7d84d4a462456d9c977a8b58ebf52e1f5948e642s:32:\"cLySoTGJ4nnH8c1iAvL-EUB3fj-cbKqF\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '65129'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B; PHPSESSID=el2mi3a2tu7ffh3oeorn1d9h55; _csrf=f26863dcf8787d805cb4531c7d84d4a462456d9c977a8b58ebf52e1f5948e642s%3A32%3A%22cLySoTGJ4nnH8c1iAvL-EUB3fj-cbKqF%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418209251.8025
+    'REQUEST_TIME' => 1418209251
+]
+2014-12-10 14:15:14 [123.126.110.25][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 14:15:14 [123.126.110.25][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 123.126.110.25
+2014-12-10 14:15:14 [123.126.110.25][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '123.126.110.25'
+    'REMOTE_PORT' => '2985'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418220914.6657
+    'REQUEST_TIME' => 1418220914
+]
+2014-12-10 15:00:22 [123.126.110.25][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 15:00:22 [123.126.110.25][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 123.126.110.25
+2014-12-10 15:00:21 [123.126.110.25][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '94bquhpq2anbohr0tovdf94ju0'
+    '_csrf' => '41742884fa9f35b3113c0f7243abc7a6712ff4ef55e6639e1ed9882789c05da6s:32:\"A_BIeQsaX6mxAeQ0uqPz-TX-MkBLzN5R\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '123.126.110.25'
+    'REMOTE_PORT' => '3072'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=94bquhpq2anbohr0tovdf94ju0; _csrf=41742884fa9f35b3113c0f7243abc7a6712ff4ef55e6639e1ed9882789c05da6s%3A32%3A%22A_BIeQsaX6mxAeQ0uqPz-TX-MkBLzN5R%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418223621.6939
+    'REQUEST_TIME' => 1418223621
+]
+2014-12-10 15:10:47 [123.126.110.25][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-10 15:10:47 [123.126.110.25][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 123.126.110.25
+2014-12-10 15:10:47 [123.126.110.25][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '94bquhpq2anbohr0tovdf94ju0'
+    '_csrf' => '41742884fa9f35b3113c0f7243abc7a6712ff4ef55e6639e1ed9882789c05da6s:32:\"A_BIeQsaX6mxAeQ0uqPz-TX-MkBLzN5R\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '123.126.110.25'
+    'REMOTE_PORT' => '24796'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=94bquhpq2anbohr0tovdf94ju0; _csrf=41742884fa9f35b3113c0f7243abc7a6712ff4ef55e6639e1ed9882789c05da6s%3A32%3A%22A_BIeQsaX6mxAeQ0uqPz-TX-MkBLzN5R%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418224247.3405
+    'REQUEST_TIME' => 1418224247
+]
+2014-12-11 00:39:35 [218.241.97.200][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 218.241.97.200
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-11 00:39:35 [218.241.97.200][-][-][info][application] $_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '218.241.97.200'
+    'REMOTE_PORT' => '53898'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418258375.0146
+    'REQUEST_TIME' => 1418258375
+]
+2014-12-11 02:25:52 [61.135.152.211][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php:154
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/captcha/Captcha.php(68): yii\captcha\Captcha::checkRequirements()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Object.php(107): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#7 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /usr/local/nginx/html/textwizard/views/site/contact.php(48): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(325): require('/usr/local/ngin...')
+#10 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/usr/local/ngin...', Array)
+#11 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/usr/local/ngin...', Array, Object(app\controllers\SiteController))
+#12 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /usr/local/nginx/html/textwizard/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#17 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('contact', Array)
+#18 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#19 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-12-11 02:25:52 [61.135.152.211][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+2014-12-11 02:25:52 [61.135.152.211][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '51155'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418264752.3364
+    'REQUEST_TIME' => 1418264752
+]
+2014-12-11 05:15:27 [61.135.152.211][100][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:88
+2014-12-11 05:15:27 [61.135.152.211][100][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+    'PHPSESSID' => 'mrgr6rcq1kehlgblj8i5876q03'
+    '_csrf' => 'e6a72ab95709b48550a1bec4b42306a0d1665829026ebb596b375ef25f175e7es:32:\"TqzvMgmiSzw2kWvm144zaUa0L9N_v-4J\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'uaaeye'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60026'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B; PHPSESSID=mrgr6rcq1kehlgblj8i5876q03; _csrf=e6a72ab95709b48550a1bec4b42306a0d1665829026ebb596b375ef25f175e7es%3A32%3A%22TqzvMgmiSzw2kWvm144zaUa0L9N_v-4J%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418274927.1514
+    'REQUEST_TIME' => 1418274927
+]
+2014-12-11 05:15:34 [61.135.152.211][100][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 61.135.152.211
+    in /usr/local/nginx/html/textwizard/views/layouts/main.php:66
+    in /usr/local/nginx/html/textwizard/controllers/SiteController.php:52
+2014-12-11 05:15:34 [61.135.152.211][100][-][info][application] $_COOKIE = [
+    '_identity' => '606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as:28:\"[\"100\",\"test100key\",2592000]\";'
+    'PHPSESSID' => '87ch8safepts5fpnbo0cnfv1j1'
+    '_csrf' => 'e6a72ab95709b48550a1bec4b42306a0d1665829026ebb596b375ef25f175e7es:32:\"TqzvMgmiSzw2kWvm144zaUa0L9N_v-4J\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'uaaeye'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'USER' => 'nobody'
+    'HOME' => '/'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/usr/local/nginx/html/textwizard/web/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/usr/local/nginx/html/textwizard/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.7.7'
+    'REMOTE_ADDR' => '61.135.152.211'
+    'REMOTE_PORT' => '60026'
+    'SERVER_ADDR' => '123.57.65.230'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'textwizard.cn'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'textwizard.cn'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://textwizard.cn/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity=606c6700f280cda4c36e390fc3b4cfecbde6b000f31afa1c8a5483e9d1f9bc0as%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B; PHPSESSID=87ch8safepts5fpnbo0cnfv1j1; _csrf=e6a72ab95709b48550a1bec4b42306a0d1665829026ebb596b375ef25f175e7es%3A32%3A%22TqzvMgmiSzw2kWvm144zaUa0L9N_v-4J%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1418274934.9161
+    'REQUEST_TIME' => 1418274934
+]

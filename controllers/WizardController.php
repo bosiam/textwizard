@@ -46,6 +46,7 @@ class WizardController extends Controller
     }
     public function actionIndex()
     {
+        $this->layout = 'textwizard';
         return $this->render('index');
     }
 

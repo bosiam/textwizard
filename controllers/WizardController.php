@@ -7,9 +7,8 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 
-class SiteController extends Controller
+class WizardController extends Controller
 {
-    public $defaultAction = 'serialize';
     public function behaviors()
     {
         return [
@@ -47,7 +46,7 @@ class SiteController extends Controller
     }
     public function actionIndex()
     {
-        $this->render('index');
+        return $this->render('index');
     }
 
 }

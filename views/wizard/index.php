@@ -8,12 +8,11 @@ $this->title = 'MY SITE';
         <div class="panel-heading">
             a PHP parser
         </div>
-        <div class="panel-body">
+        <div class="bs-example">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
-                <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-                <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+                <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">直接粘贴</a></li>
+                <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">URL</a></li>
+                <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">文件上传</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
@@ -28,14 +27,11 @@ $this->title = 'MY SITE';
                     <input type="file" name="ufile">
                 </div>
             </div>
+            <div class="bs-callout bs-callout-warning">
+                <button class="btn btn-primary" type="button">json编码</button>
+                <button class="btn btn-primary" type="button">json解码</button>
+            </div>
                 <form>
-                    <!--
-                    <button class="btn btn-primary" type="button">json解码</button>
-                    <button class="btn btn-primary" type="button">json解码</button>
-                    <button class="btn btn-primary" type="button">json解码</button>
-                    <button class="btn btn-primary" type="button">json解码</button>
-                    <button class="btn btn-primary" type="button">json解码</button>
-                    <input type="radio" name="type" value="json">json解码-->
                 </form>
             <textarea id="form_data_direct" name="data[direct]"  rows="10" cols="80" style="width: 100%">
             </textarea>

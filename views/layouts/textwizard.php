@@ -26,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => 'My Company',
+                'brandLabel' => 'textwizard.cn|文本巫',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -35,29 +35,25 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'About', 'url' => ['/site/about']],
-                    ['options' => ['class'=>'dropdown'],'label' => 'Contact', 'url' => ['/site/contact']],
                     [
-                        'label' => 'Dropdown',
+                        'label' => '编码解码',
+                        'url' =>'/site/index',
                         'items' => [
-                             ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
-                             '<li class="divider"></li>',
-                             '<li class="dropdown-header">Dropdown Header</li>',
-                             ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
+                            ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
+                            '<li class="divider"></li>',
+                            '<li class="dropdown-header">Dropdown Header</li>',
+                            ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
                         ],
                     ],
-                    Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
-                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
+                    ['label' => '字符集表', 'url' => ['/site/about']],
+                    ['options' => ['class'=>'dropdown'],'label' => '在线程序执行', 'url' => ['/site/contact']],
+                    ['label' => '文档转换', 'url' => ['/site/about']],
                 ],
             ]);
             NavBar::end();
         ?>
 
-        <div class="container">
+        <div class="container" style="width: 900px">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>

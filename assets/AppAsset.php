@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
         'css/docs.css',
     ];
     public $js = [
+        'js/textwizard.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

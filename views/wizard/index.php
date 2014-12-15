@@ -1,6 +1,7 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = '在线|json编码|json解码|json_encode|json_decode';
+$this->title = $conf['title'];
+$link = Yii::$app->urlManager->createUrl('wizard/index');
 ?>
 <div class="site-index">
             <div class="bs-callout bs-callout-info">
@@ -12,24 +13,29 @@ $this->title = '在线|json编码|json解码|json_encode|json_decode';
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="home">
-                        <textarea id="form_data_direct" name="content"  rows="10" cols="80" style="width: 100%">
-                        </textarea>
+                        <textarea id="content_paste_direct" class="content_holder" name="content"  rows="10" cols="80" style="width: 100%"></textarea>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="profile">
-                        <input type="text" name="url" style="width: 500px" value="http://">
+                        <input id="content_from_url" type="text" class="content_holder" name="url" style="width: 500px" value="http://">
                     </div>
                     <div role="tabpanel" class="tab-pane" id="messages">
-                        <input type="file" name="ufile">
+                        <input type="file" id="content_from_file" class="content_holder" name="ufile">
                     </div>
                 </div>
             </div>
             <div class="bs-callout bs-callout-info">
-                <button class="btn btn-primary" type="button">json编码</button>
-                <button class="btn btn-primary" type="button">json解码</button>
+                <button class="btn btn-primary" type="button" onclick="enclick('<?=$link?>');"><?=$conf['enlabel']?></button>
+                <button class="btn btn-primary" type="button"><?=$conf['delabel']?></button>
             </div>
             <div class="bs-callout bs-callout-info">
-                <textarea id="form_data_direct" name="data[direct]"  rows="10" cols="80" style="width: 100%">
-                </textarea>
+                <div role="alert" class="alert alert-success">
+                    <strong>Well done!</strong> You successfully read this important alert message.
+                    <span style="text-decoration: underline">
+                        <a href="#" >另存为</a>
+                        <a href="#">复制到粘贴板</a>
+                    </span>
+                </div>
+                <textarea id="output_direct" rows="10" cols="80" style="width: 100%"></textarea>
             </div>
     <div class="body-content">
         <!--json编码解码

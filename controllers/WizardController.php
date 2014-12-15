@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Wizard;
 use Yii;
 use yii\console\Response;
 use yii\filters\AccessControl;
@@ -47,8 +48,20 @@ class WizardController extends Controller
     }
     public function actionIndex()
     {
-        $this->layout = 'textwizard';
-        return $this->render('index');
+        if(isset($_POST['text']))
+        {
+            $text = $_POST['text'];
+            $output = (unserialize($text));
+            var_export($output);
+            exit;
+        }
+        else
+        {
+            $type = 'serialize';
+            $this->layout = 'textwizard';
+            $config = Wizard::getCodeType($type);
+            return $this->render('index',['conf' => $config]);
+        }
     }
 
 }

@@ -38,12 +38,7 @@ AppAsset::register($this);
                     [
                         'label' => '编码解码',
                         'url' =>'/site/index',
-                        'items' => [
-                            ['label' => 'Level 1 - Dropdown A', 'url' => '#'],
-                            '<li class="divider"></li>',
-                            '<li class="dropdown-header">Dropdown Header</li>',
-                            ['label' => 'Level 1 - Dropdown B', 'url' => '#'],
-                        ],
+                        'items' => \app\models\Wizard::getMenuLabels(),
                     ],
                     ['label' => '字符集表', 'url' => ['/site/about']],
                     ['options' => ['class'=>'dropdown'],'label' => '在线程序执行', 'url' => ['/site/contact']],

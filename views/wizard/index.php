@@ -30,10 +30,10 @@ $link = Yii::$app->urlManager->createUrl('wizard/index');
             <div class="bs-callout bs-callout-info">
                 <div role="alert" class="alert alert-success">
                     <strong>Well done!</strong> You successfully read this important alert message.
-                    <span style="text-decoration: underline">
+                    <p class="pull-right">
                         <a href="#" >另存为</a>
                         <a href="#">复制到粘贴板</a>
-                    </span>
+                    </p>
                 </div>
                 <textarea id="output_direct" rows="10" cols="80" style="width: 100%"></textarea>
             </div>

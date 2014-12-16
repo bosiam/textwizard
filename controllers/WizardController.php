@@ -57,11 +57,18 @@ class WizardController extends Controller
         }
         else
         {
-            $type = 'serialize';
-            $this->layout = 'textwizard';
-            $config = Wizard::getCodeType($type);
-            return $this->render('index',['conf' => $config]);
+            return $this->actionCommonRender();
         }
+    }
+    public function actionCommonRender($type='serialize')
+    {
+        $this->layout = 'textwizard';
+        $config = Wizard::getCodeType($type);
+        return $this->render('index',['conf' => $config]);
+    }
+    public static function actionJson()
+    {
+
     }
 
 }

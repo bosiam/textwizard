@@ -22,6 +22,14 @@ function enclick(link)
     var content = a.val();
     var cid = a.attr('id');
     var method = '';
+    var success_html = '' +
+        '<div role="alert" class="alert alert-success">' +
+        '<strong>Well done!</strong>' +
+        ' You successfully read this important alert message.' +
+        '<p class="pull-right">' +
+        '<a href="#" >另存为</a> ' +
+        '<a href="#">复制到粘贴板</a>' +
+        '</p></div>';
     if(cid === 'content_paste_direct')
     {
         method = 'paste';
@@ -39,6 +47,7 @@ function enclick(link)
             type:'POST',
             success: function(result){
                 $('#output_direct').val(result);
+                $('#result_output').prepend(success_html);
             }
         });
     }

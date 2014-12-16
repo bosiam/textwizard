@@ -27,14 +27,7 @@ $link = Yii::$app->urlManager->createUrl('wizard/index');
                 <button class="btn btn-primary" type="button" onclick="enclick('<?=$link?>');"><?=$conf['enlabel']?></button>
                 <button class="btn btn-primary" type="button"><?=$conf['delabel']?></button>
             </div>
-            <div class="bs-callout bs-callout-info">
-                <div role="alert" class="alert alert-success">
-                    <strong>Well done!</strong> You successfully read this important alert message.
-                    <p class="pull-right">
-                        <a href="#" >另存为</a>
-                        <a href="#">复制到粘贴板</a>
-                    </p>
-                </div>
+            <div class="bs-callout bs-callout-info" id="result_output">
                 <textarea id="output_direct" rows="10" cols="80" style="width: 100%"></textarea>
             </div>
     <div class="body-content">

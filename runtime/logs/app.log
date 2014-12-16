@@ -1595,3 +1595,337 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1418287939.166
     'REQUEST_TIME' => 1418287939
 ]
+2014-12-16 18:09:27 [][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(682): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(656): yii\web\Request->resolvePathInfo()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/UrlManager.php(229): yii\web\Request->getPathInfo()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(180): yii\web\UrlManager->parseRequest(Object(yii\web\Request))
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2014-12-16 18:09:27 [][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 
+2014-12-16 18:09:27 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724567.3075
+    'REQUEST_TIME' => 1418724567
+    'argv' => [
+        0 => 'web/index.php'
+        1 => 'Wizard/index'
+    ]
+    'argc' => 2
+]
+2014-12-16 18:09:27 [][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' 
+
+in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(732): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(141): yii\web\Request->getAbsoluteUrl()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(51): yii\debug\LogTarget->collectSummary()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2014-12-16 18:09:27 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724567.3075
+    'REQUEST_TIME' => 1418724567
+    'argv' => [
+        0 => 'web/index.php'
+        1 => 'Wizard/index'
+    ]
+    'argc' => 2
+]
+2014-12-16 18:10:38 [][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(682): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(656): yii\web\Request->resolvePathInfo()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/UrlManager.php(229): yii\web\Request->getPathInfo()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(180): yii\web\UrlManager->parseRequest(Object(yii\web\Request))
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2014-12-16 18:10:38 [][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 
+2014-12-16 18:10:38 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724638.6742
+    'REQUEST_TIME' => 1418724638
+    'argv' => [
+        0 => 'web/index.php'
+        1 => 'Wizard/test'
+    ]
+    'argc' => 2
+]
+2014-12-16 18:10:38 [][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' 
+
+in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(732): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(141): yii\web\Request->getAbsoluteUrl()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(51): yii\debug\LogTarget->collectSummary()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2014-12-16 18:10:38 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724638.6742
+    'REQUEST_TIME' => 1418724638
+    'argv' => [
+        0 => 'web/index.php'
+        1 => 'Wizard/test'
+    ]
+    'argc' => 2
+]
+2014-12-16 18:10:45 [][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(682): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(656): yii\web\Request->resolvePathInfo()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/UrlManager.php(229): yii\web\Request->getPathInfo()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(180): yii\web\UrlManager->parseRequest(Object(yii\web\Request))
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /usr/local/nginx/html/textwizard/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2014-12-16 18:10:45 [][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 
+2014-12-16 18:10:45 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724645.3287
+    'REQUEST_TIME' => 1418724645
+    'argv' => [
+        0 => 'web/index.php'
+    ]
+    'argc' => 1
+]
+2014-12-16 18:10:45 [][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'Unable to determine the request URI.' 
+
+in /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php:787
+
+Stack trace:
+#0 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(747): yii\web\Request->resolveRequestUri()
+#1 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/web/Request.php(732): yii\web\Request->getUrl()
+#2 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(141): yii\web\Request->getAbsoluteUrl()
+#3 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(51): yii\debug\LogTarget->collectSummary()
+#4 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2-debug/LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#5 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#6 /usr/local/nginx/html/textwizard/vendor/yiisoft/yii2/log/Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2014-12-16 18:10:45 [][-][-][info][application] $_SERVER = [
+    'PHPFPM' => '/usr/local/php/sbin/php-fpm'
+    'HOSTNAME' => 'iZ25lhi60cxZ'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '61.135.152.211 57086 22'
+    'OLDPWD' => '/usr/local/nginx/html'
+    'SSH_TTY' => '/dev/pts/1'
+    'NGINX_CONF' => '/usr/local/nginx/nginx.conf'
+    'WWW' => '/usr/local/nginx/html'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PHPFPM_CONF' => '/usr/local/php/etc/php-fpm.conf'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/php/bin/:/usr/local/mysql/bin/'
+    'PWD' => '/usr/local/nginx/html/textwizard'
+    'NGINX' => '/usr/local/nginx/nginx'
+    'LANG' => 'en_US.UTF-8'
+    'PHP_INI' => '/usr/local/php/lib/php.ini'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'GDL_PATH' => '+/usr/share/gnudatalanguage'
+    'LOGNAME' => 'root'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '61.135.152.211 57086 123.57.65.230 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/usr/local/php/bin/php'
+    'PHP_SELF' => 'web/index.php'
+    'SCRIPT_NAME' => 'web/index.php'
+    'SCRIPT_FILENAME' => 'web/index.php'
+    'PATH_TRANSLATED' => 'web/index.php'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418724645.3287
+    'REQUEST_TIME' => 1418724645
+    'argv' => [
+        0 => 'web/index.php'
+    ]
+    'argc' => 1
+]

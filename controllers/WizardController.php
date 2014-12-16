@@ -70,5 +70,9 @@ class WizardController extends Controller
     {
 
     }
+	public function actionTest()
+	{
+		echo 'haha';
+	}
 
 }

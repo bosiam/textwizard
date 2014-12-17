@@ -51,6 +51,14 @@ class Wizard extends Model
                 'keywords' =>'',
                 'enlabel' => 'serialize序列化',
                 'delabel' => 'unserialize反序列化',
+            ],
+            'msgpack' => [
+                'label' => 'msgpack序列化',
+                'url' => '',
+                'title' => '在线序列化|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
+                'keywords' =>'',
+                'enlabel' => 'msgpack_pack序列化',
+                'delabel' => 'msgpack_unpack反序列化',
             ]
         ];
         return $conf;

@@ -48,12 +48,20 @@ class WizardController extends Controller
     }
     public function actionIndex()
     {
-        if(isset($_POST['text']))
+        $type = Yii::$app->request->post('type');
+        if($type)
         {
-            $text = $_POST['text'];
-            $output = (unserialize($text));
-            var_export($output);
-            exit;
+            $text = Yii::$app->request->post('text');
+            if($type === 'direct')
+            {
+                $output = (unserialize($text));
+                var_export($output);
+                exit;
+            }
+            elseif($type === 'url')
+            {
+
+            }
         }
         else
         {
@@ -66,9 +74,13 @@ class WizardController extends Controller
         $config = Wizard::getCodeType($type);
         return $this->render('index',['conf' => $config]);
     }
-    public static function actionJson()
+    public function actionJson()
     {
-
+        return $this->actionCommonRender('json');
+    }
+    public function actionMsgpack()
+    {
+        return $this->actionCommonRender('msgpack');
     }
 	public function actionTest()
 	{

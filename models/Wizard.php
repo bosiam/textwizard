@@ -4,7 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
-use Curl\Curl;
+use Curl\Zebra_cURL;
 
 /**
  * ContactForm is the model behind the contact form.
@@ -81,8 +81,8 @@ class Wizard extends Model
         {
             if($type === 'content_from_url')
             {
-                $curl = new Curl();
-                $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
+                $curl = new Zebra_cURL();
+				$curl->threads = Wizard::REQUEST_URL_TIMEOUT;
                 $text = $curl->get($text);
             }
             $side = Yii::$app->request->post('side');
@@ -108,6 +108,7 @@ class Wizard extends Model
             'msgpack' => ['en'=>'msgpack_pack','de'=>'msgpack_unpack'],
             'json' => ['en'=>'json_encode','de'=>'json_decode'],
         ];
+		return $conf;
     }
 
 

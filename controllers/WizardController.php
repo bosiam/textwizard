@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Wizard;
+use Curl\Curl;
 use Yii;
 use yii\console\Response;
 use yii\filters\AccessControl;
@@ -46,33 +47,25 @@ class WizardController extends Controller
             ],
         ];
     }
+    public function actionCommonRender($type='serialize',$view='index')
+    {
+        $this->layout = 'textwizard';
+        $config = Wizard::getCodeType($type);
+        return $this->render($view,['conf' => $config]);
+    }
     public function actionIndex()
     {
         $type = Yii::$app->request->post('type');
         if($type)
         {
-            $text = Yii::$app->request->post('text');
-            if($type === 'direct')
-            {
-                $output = (unserialize($text));
-                var_export($output);
-                exit;
-            }
-            elseif($type === 'url')
-            {
-
-            }
+            $output = Wizard::getCommonContent($type,'serialize');
+            var_export($output);
+            exit;
         }
         else
         {
             return $this->actionCommonRender();
         }
-    }
-    public function actionCommonRender($type='serialize')
-    {
-        $this->layout = 'textwizard';
-        $config = Wizard::getCodeType($type);
-        return $this->render('index',['conf' => $config]);
     }
     public function actionJson()
     {
@@ -80,7 +73,17 @@ class WizardController extends Controller
     }
     public function actionMsgpack()
     {
-        return $this->actionCommonRender('msgpack');
+        $type = Yii::$app->request->post('type');
+        if($type)
+        {
+            $output = Wizard::getCommonContent($type,'msgpack');
+            var_export($output);
+            exit;
+        }
+        else
+        {
+            return $this->actionCommonRender('msgpack','msgpack');
+        }
     }
 	public function actionTest()
 	{

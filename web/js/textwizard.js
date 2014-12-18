@@ -15,39 +15,27 @@ myApp = myApp || (function () {
     }
     };
     })();
-
-function enclick(link)
+/**
+ * submit code raw data by ajax
+ * @param link action URL
+ * @param sside action side: en/de
+ */
+function enclick(link,sside)
 {
     var a = $('.tab-content  .active').find('.content_holder');
     var content = a.val();
     var cid = a.attr('id');
-    var method = '';
-    var success_html = '' +
-        '<div role="alert" class="alert alert-success">' +
-        '<strong>Well done!</strong>' +
-        ' You successfully read this important alert message.' +
-        '<p class="pull-right">' +
-        '<a href="#" >另存为</a> ' +
-        '<a href="#">复制到粘贴板</a>' +
-        '</p></div>';
-    if(cid === 'content_paste_direct')
-    {
-        method = 'paste';
-    }
-    else if(cid === 'content_from_url')
-    {
-        method = 'url'
-    }
     if(content)
     {
         $.ajax({
             url: link,
             context: document.body,
-            data:{text:content,type:method},
+            data:{text:content,type:cid,side:sside},
             type:'POST',
             success: function(result){
                 $('#output_direct').val(result);
-                $('#result_output').prepend(success_html);
+                var alert_id = (result == 0) ? 'fail_result_output_alert' : 'success_result_output_alert';
+                $(alert_id).css('display','block');
             }
         });
     }

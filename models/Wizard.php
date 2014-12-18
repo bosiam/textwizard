@@ -10,11 +10,7 @@ use yii\base\Model;
  */
 class Wizard extends Model
 {
-    public $name;
-    public $email;
-    public $subject;
-    public $body;
-    public $verifyCode;
+    const REQUEST_URL_TIMEOUT = 15;
 
     /**
      * @return array the validation rules.
@@ -38,7 +34,7 @@ class Wizard extends Model
         $conf = [
             'json' =>[
                 'label' => 'json编码',
-                'url' => '',
+                'link' => 'wizard/index',
                 'title' =>'在线编码|json编码|json解码|json_encode|json_decode',
                 'keywords' => '',
                 'enlabel' => '',
@@ -46,7 +42,7 @@ class Wizard extends Model
             ],
             'serialize' => [
                 'label' => 'serialize序列化',
-                'url' => '',
+                'link' => 'wizard/json',
                 'title' => '在线序列化|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'keywords' =>'',
                 'enlabel' => 'serialize序列化',
@@ -54,7 +50,7 @@ class Wizard extends Model
             ],
             'msgpack' => [
                 'label' => 'msgpack序列化',
-                'url' => '',
+                'link' => 'wizard/msgpack',
                 'title' => '在线序列化|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
                 'keywords' =>'',
                 'enlabel' => 'msgpack_pack序列化',
@@ -76,6 +72,41 @@ class Wizard extends Model
             $labels[] = $conf;
         }
         return $labels;
+    }
+    public static function getCommonContent($type,$action)
+    {
+        $text = Yii::$app->request->post('text');
+        if($text)
+        {
+            if($type === 'content_from_url')
+            {
+                $curl = new Curl();
+                $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
+                $text = $curl->get($text);
+            }
+            $side = Yii::$app->request->post('side');
+            $conf = self::codeFuncConf();
+            if(($func = $conf[$action][$side]))
+            {
+                if($func === 'json_decode')
+                {
+                    $text =  call_user_func($func,$text,true);
+                }
+                else
+                {
+                    $text = call_user_func($func,$text);
+                }
+            }
+        }
+        return $text;
+    }
+    public static function codeFuncConf()
+    {
+        $conf = [
+            'index' => ['en'=>'serialize','de'=>'unserialize'],
+            'msgpack' => ['en'=>'msgpack_pack','de'=>'msgpack_unpack'],
+            'json' => ['en'=>'json_encode','de'=>'json_decode'],
+        ];
     }
 
 

@@ -69,7 +69,17 @@ class WizardController extends Controller
     }
     public function actionJson()
     {
-        return $this->actionCommonRender('json');
+        $type = Yii::$app->request->post('type');
+        if($type)
+        {
+            $output = Wizard::getCommonContent($type,'json');
+            var_export($output);
+            exit;
+        }
+        else
+        {
+            return $this->actionCommonRender('json');
+        }
     }
     public function actionMsgpack()
     {
@@ -87,6 +97,9 @@ class WizardController extends Controller
     }
 	public function actionTest()
 	{
+        $a = new Curl();
+        $b = $a->get('http://api.sina.cn/sinago/list.json?channel=news_toutiao&adid=b9c8c4bf3ff9e496fb409dac1e89bdae&p=1&wm=b207&from=6042195012&chwm=3022_0001&oldchwm=3022_0001&imei=863020014800696&uid=ee94b62b651df812');
+
 		echo 'haha';
 	}
 

@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
+use Curl\Curl;
 
 /**
  * ContactForm is the model behind the contact form.
@@ -34,15 +35,15 @@ class Wizard extends Model
         $conf = [
             'json' =>[
                 'label' => 'json编码',
-                'link' => 'wizard/index',
+                'url' => Yii::$app->urlManager->createUrl('wizard/json'),
                 'title' =>'在线编码|json编码|json解码|json_encode|json_decode',
                 'keywords' => '',
-                'enlabel' => '',
-                'delabel' => '',
+                'enlabel' => 'json_encode编码',
+                'delabel' => 'json_decode解码',
             ],
             'serialize' => [
                 'label' => 'serialize序列化',
-                'link' => 'wizard/json',
+                'url' => Yii::$app->urlManager->createUrl('wizard/index'),
                 'title' => '在线序列化|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'keywords' =>'',
                 'enlabel' => 'serialize序列化',
@@ -50,7 +51,7 @@ class Wizard extends Model
             ],
             'msgpack' => [
                 'label' => 'msgpack序列化',
-                'link' => 'wizard/msgpack',
+                'url' => Yii::$app->urlManager->createUrl('wizard/msgpack'),
                 'title' => '在线序列化|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
                 'keywords' =>'',
                 'enlabel' => 'msgpack_pack序列化',

@@ -1,7 +1,6 @@
 <?php
 /* @var $this yii\web\View */
 $this->title = $conf['title'];
-$link = Yii::$app->urlManager->createUrl($conf['link']);
 ?>
 <div class="site-index">
             <div class="bs-callout bs-callout-info">
@@ -24,8 +23,8 @@ $link = Yii::$app->urlManager->createUrl($conf['link']);
                 </div>
             </div>
             <div class="bs-callout bs-callout-info">
-                <button class="btn btn-primary" type="button" onclick="enclick('<?=$link?>','en');"><?=$conf['enlabel']?></button>
-                <button class="btn btn-primary" type="button" onclick="enclick('<?=$link?>','de');"><?=$conf['delabel']?></button>
+                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','en');"><?=$conf['enlabel']?></button>
+                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','de');"><?=$conf['delabel']?></button>
             </div>
             <div class="bs-callout bs-callout-info" id="result_output">
                 <div role="alert" class="alert alert-success" id="success_result_output_alert" style="display: none">

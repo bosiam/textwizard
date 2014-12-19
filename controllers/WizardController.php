@@ -3,7 +3,6 @@
 namespace app\controllers;
 
 use app\models\Wizard;
-use Curl\Curl;
 use Yii;
 use yii\console\Response;
 use yii\filters\AccessControl;

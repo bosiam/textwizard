@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+use Curl\Curl;
 use Yii;
 use yii\base\Model;
 use Curl\Zebra_cURL;
@@ -81,9 +82,17 @@ class Wizard extends Model
         {
             if($type === 'content_from_url')
             {
-                $curl = new Zebra_cURL();
-				$curl->threads = Wizard::REQUEST_URL_TIMEOUT;
-                $text = $curl->get($text);
+                $curl = new Curl();
+                $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
+                $curl->get($text);
+                if($curl->curl_error)
+                {//取原数据
+                    $text = $curl->raw_response;
+                }
+                else
+                {
+                    $text = $curl->error_message;
+                }
             }
             $side = Yii::$app->request->post('side');
             $conf = self::codeFuncConf();

@@ -11,6 +11,7 @@ use yii\filters\VerbFilter;
 
 class WizardController extends Controller
 {
+    public $layout = 'textwizard';
     public function behaviors()
     {
         return [
@@ -48,7 +49,6 @@ class WizardController extends Controller
     }
     public function actionCommonRender($type='serialize',$view='index')
     {
-        $this->layout = 'textwizard';
         $config = Wizard::getCodeType($type);
         return $this->render($view,['conf' => $config]);
     }

@@ -12,7 +12,7 @@ use Curl\Zebra_cURL;
  */
 class Wizard extends Model
 {
-    const REQUEST_URL_TIMEOUT = 15;
+    const REQUEST_URL_TIMEOUT = 30;
 
     /**
      * @return array the validation rules.
@@ -86,12 +86,12 @@ class Wizard extends Model
                 $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
                 $curl->get($text);
                 if($curl->curl_error)
-                {//取原数据
-                    $text = $curl->raw_response;
+                {//取出错误信息
+                    $text = $curl->error_message;
                 }
                 else
-                {
-                    $text = $curl->error_message;
+                {//取原数据
+                    $text = $curl->raw_response;
                 }
             }
             $side = Yii::$app->request->post('side');
@@ -113,7 +113,7 @@ class Wizard extends Model
     public static function codeFuncConf()
     {
         $conf = [
-            'index' => ['en'=>'serialize','de'=>'unserialize'],
+            'serialize' => ['en'=>'serialize','de'=>'unserialize'],
             'msgpack' => ['en'=>'msgpack_pack','de'=>'msgpack_unpack'],
             'json' => ['en'=>'json_encode','de'=>'json_decode'],
         ];

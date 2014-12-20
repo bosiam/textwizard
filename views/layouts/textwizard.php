@@ -40,9 +40,9 @@ AppAsset::register($this);
                         'url' =>'/site/index',
                         'items' => \app\models\Wizard::getMenuLabels(),
                     ],
-                    ['label' => '字符集表', 'url' => ['/site/about']],
-                    ['options' => ['class'=>'dropdown'],'label' => '在线程序执行', 'url' => ['/site/contact']],
-                    ['label' => '文档转换', 'url' => ['/site/about']],
+                    ['label' => '字符集表', 'url' => ['/charset/index']],
+                    ['label' => '在线程序执行', 'url' => ['/program/index']],
+                    ['label' => '文档转换', 'url' => ['/docConvert/index']],
                 ],
             ]);
             NavBar::end();

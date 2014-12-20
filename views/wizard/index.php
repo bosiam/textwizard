@@ -37,7 +37,10 @@ $this->title = $conf['title'];
                 <div role="alert" class="alert alert-danger" id="fail_result_output_alert" style="display: none">
                     <strong>Oh snap!</strong> Change a few things up and try submitting again.
                 </div>
-                <textarea id="output_direct" rows="10" cols="80" style="width: 100%"></textarea>
+                <pre>
+                <div id="output_direct">
+                </div>
+                </pre>
             </div>
     <div class="body-content">
         <!--json编码解码

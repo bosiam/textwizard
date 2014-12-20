@@ -33,8 +33,8 @@ function enclick(link,sside)
             data:{text:content,type:cid,side:sside},
             type:'POST',
             success: function(result){
-                $('#output_direct').val(result);
-                var alert_id = (result == 0) ? 'fail_result_output_alert' : 'success_result_output_alert';
+                $('#output_direct').html(result);
+                var alert_id = (result == 0) ? '#fail_result_output_alert' : '#success_result_output_alert';
                 $(alert_id).css('display','block');
             }
         });

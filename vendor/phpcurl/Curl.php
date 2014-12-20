@@ -437,8 +437,8 @@ class Curl
     {
         $ch = $_ch === null ? $this : $_ch;
 
-        $response_headers_fh = fopen('php://memory', 'wb+');
-        $ch->setOpt(CURLOPT_WRITEHEADER, $response_headers_fh);
+        //$response_headers_fh = fopen('php://memory', 'wb+');
+        //$ch->setOpt(CURLOPT_WRITEHEADER, $response_headers_fh);
 
         if ($ch->multi_child) {
             $ch->raw_response = curl_multi_getcontent($ch->curl);
@@ -447,9 +447,9 @@ class Curl
             $ch->curl_error_code = curl_errno($ch->curl);
         }
 
-        rewind($response_headers_fh);
-        $ch->raw_response_headers = stream_get_contents($response_headers_fh);
-        fclose($response_headers_fh);
+        //rewind($response_headers_fh);
+        //$ch->raw_response_headers = stream_get_contents($response_headers_fh);
+        //fclose($response_headers_fh);
 
         $ch->curl_error_message = curl_error($ch->curl);
         $ch->curl_error = !($ch->curl_error_code === 0);
@@ -459,7 +459,7 @@ class Curl
         $ch->error_code = $ch->error ? ($ch->curl_error ? $ch->curl_error_code : $ch->http_status_code) : 0;
 
         $ch->request_headers = $this->parseRequestHeaders(curl_getinfo($ch->curl, CURLINFO_HEADER_OUT));
-        $ch->response_headers = $this->parseResponseHeaders($ch->raw_response_headers);
+        //$ch->response_headers = $this->parseResponseHeaders($ch->raw_response_headers);
         list($ch->response, $ch->raw_response) = $this->parseResponse($ch->response_headers, $ch->raw_response);
 
         $ch->http_error_message = '';

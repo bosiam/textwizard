@@ -16,12 +16,6 @@ $this->title = $name;
     <div class="alert alert-danger">
         <?= nl2br(Html::encode($message)) ?>
     </div>
-
-    <p>
-        The above error occurred while the Web server was processing your request.
-    </p>
-    <p>
-        Please contact us if you think this is a server error. Thank you.
-    </p>
-
+    <h1>We'll be back.</h1>
+    <h3>We're busy updating the textwizard.cn for you and will be back soon.</h3>
 </div>

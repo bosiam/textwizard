@@ -7,7 +7,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 
-class SiteController extends Controller
+class CharsetController extends Controller
 {
     public function behaviors()
     {
@@ -43,10 +43,6 @@ class SiteController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
-    }
-    public function actionIndex()
-    {
-        $this->render('index');
     }
 
 }

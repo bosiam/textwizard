@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 $this->title = $conf['title'];
 ?>
+<h1><?=$conf['label']?></h1>
 <div class="site-index">
             <div class="bs-callout bs-callout-info">
                 <ul class="nav nav-tabs" role="tablist">
@@ -24,7 +25,7 @@ $this->title = $conf['title'];
             </div>
             <div class="bs-callout bs-callout-info" id="result_output">
                 <div role="alert" class="alert alert-success" id="success_result_output_alert" style="display: none">
-                    <strong>Well done!</strong> You successfully read this important alert message.
+                    <strong>Well done!</strong> You successfully convert the text.
                         <!--<p class="pull-right">
                         <a href="#" >另存为</a>
                         <a href="#">复制到粘贴板</a>

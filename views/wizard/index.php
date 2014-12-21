@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 $this->title = $conf['title'];
 ?>
+<h1><?=$conf['label']?></h1>
 <div class="site-index">
             <div class="bs-callout bs-callout-info">
                 <ul class="nav nav-tabs" role="tablist">

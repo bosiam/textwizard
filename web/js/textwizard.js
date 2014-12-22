@@ -6,14 +6,14 @@
 var myApp;
 myApp = myApp || (function () {
     var pleaseWaitDiv = $('<div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-striped"><span class="sr-only">60% Complete</span></div>');
-    return {
-    showPleaseWait: function() {
-    pleaseWaitDiv.modal();
-    },
-    hidePleaseWait: function () {
-    pleaseWaitDiv.modal('hide');
-    }
-    };
+        return {
+                showPleaseWait: function() {
+                pleaseWaitDiv.modal();
+            },
+                hidePleaseWait: function () {
+                pleaseWaitDiv.modal('hide');
+            }
+        };
     })();
 /**
  * submit code raw data by ajax
@@ -22,6 +22,7 @@ myApp = myApp || (function () {
  */
 function enclick(link,sside)
 {
+    myApp.showPleaseWait();
     var a = $('.tab-content  .active').find('.content_holder');
     var content = a.val();
     var cid = a.attr('id');
@@ -33,6 +34,7 @@ function enclick(link,sside)
             data:{text:content,type:cid,side:sside},
             type:'POST',
             success: function(result){
+                myApp.hidePleaseWait();
                 $('#output_direct').html(result);
                 var alert_id = (result == 0) ? '#fail_result_output_alert' : '#success_result_output_alert';
                 $(alert_id).css('display','block');

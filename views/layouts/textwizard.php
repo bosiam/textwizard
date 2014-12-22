@@ -37,7 +37,7 @@ AppAsset::register($this);
                 'items' => [
                     [
                         'label' => '编码解码',
-                        'url' =>'/site/index',
+                        'url' =>'/wizard/index',
                         'items' => \app\models\Wizard::getMenuLabels(),
                     ],
                     ['label' => '字符集表', 'url' => ['/charset/index']],
@@ -62,11 +62,11 @@ AppAsset::register($this);
             <p class="pull-right"><?= Yii::powered() ?></p>
         </div>
     </footer>
-<div class="scroll-top-wrapper ">
-<span class="scroll-top-inner">
-<i class="fa fa-2x fa-arrow-circle-up">︿</i>
-</span>
-</div>
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up">︿</i>
+        </span>
+    </div>
 
 <?php $this->endBody() ?>
 </body>

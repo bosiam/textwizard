@@ -54,12 +54,10 @@ class WizardController extends Controller
     }
     public function actionIndex()
     {
-        $type = Yii::$app->request->post('type');
-        if($type)
+        if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent($type,'serialize');
-            var_export($output);
-            exit;
+            $output = Wizard::getCommonContent();
+            $this->w($output,'serialize');
         }
         else
         {
@@ -68,12 +66,10 @@ class WizardController extends Controller
     }
     public function actionJson()
     {
-        $type = Yii::$app->request->post('type');
-        if($type)
+        if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent($type,'json');
-            var_export($output);
-            exit;
+            $output = Wizard::getCommonContent();
+            $this->w($output,'json');
         }
         else
         {
@@ -82,16 +78,14 @@ class WizardController extends Controller
     }
     public function actionMsgpack()
     {
-        $type = Yii::$app->request->post('type');
-        if($type)
+        if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent($type,'msgpack');
-            var_export($output);
-            exit;
+            $output = Wizard::getCommonContent();
+            $this->w($output,'msgpack');
         }
         else
         {
-            return $this->actionCommonRender('msgpack','msgpack');
+            return $this->actionCommonRender('msgpack');
         }
     }
 	public function actionTest()
@@ -101,5 +95,24 @@ class WizardController extends Controller
 
 		echo 'haha';
 	}
+    public function w($ret,$action)
+    {
+        $raw = Yii::$app->request->post('isRaw');
+        if($raw >= 2)
+        {//处理后的数据
+            $ret = Wizard::contentHandle($ret,$action);
+        }
+        if($raw >= 3)
+        {//json_encode
+            $ret = json_encode($ret);
+        }
+        echo $ret;
+        exit;
+    }
+    private function _isSubmit()
+    {
+        $side = Yii::$app->request->post('side');
+        return $side ? true : false;
+    }
 
 }

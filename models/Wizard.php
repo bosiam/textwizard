@@ -38,25 +38,31 @@ class Wizard extends Model
                 'label' => 'json编码',
                 'url' => Yii::$app->urlManager->createUrl('wizard/json'),
                 'title' =>'在线编码|json编码|json解码|json_encode|json_decode',
+                'head' => 'json格式在线解析',
                 'keywords' => '',
                 'enlabel' => 'json_encode编码',
                 'delabel' => 'json_decode解码',
+                'execs' => 'json'
             ],
             'serialize' => [
                 'label' => 'serialize序列化',
                 'url' => Yii::$app->urlManager->createUrl('wizard/index'),
                 'title' => '在线序列化|serialize序列化|unserialize反序列化|serialize|unserialize',
+                'head' => 'serialize在线序列化',
                 'keywords' =>'',
                 'enlabel' => 'serialize序列化',
                 'delabel' => 'unserialize反序列化',
+                'execs' => 'serialize'
             ],
             'msgpack' => [
                 'label' => 'msgpack序列化',
                 'url' => Yii::$app->urlManager->createUrl('wizard/msgpack'),
                 'title' => '在线序列化|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
+                'head' => 'msgapck在线序列化',
                 'keywords' =>'',
                 'enlabel' => 'msgpack_pack序列化',
                 'delabel' => 'msgpack_unpack反序列化',
+                'execs' => 'msgpack'
             ]
         ];
         return $conf;
@@ -75,13 +81,13 @@ class Wizard extends Model
         }
         return $labels;
     }
-    public static function getCommonContent($type,$action)
+    public static function getCommonContent()
     {
         $text = Yii::$app->request->post('text');
         if($text)
         {
-            if($type === 'content_from_url')
-            {
+            if(preg_match('/^http:\/\//',$text))
+            {//通过URL获取数据
                 $curl = new Curl();
                 $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
                 $curl->get($text);
@@ -92,19 +98,6 @@ class Wizard extends Model
                 else
                 {//取原数据
                     $text = $curl->raw_response;
-                }
-            }
-            $side = Yii::$app->request->post('side');
-            $conf = self::codeFuncConf();
-            if(($func = $conf[$action][$side]))
-            {
-                if($func === 'json_decode')
-                {
-                    $text =  call_user_func($func,$text,true);
-                }
-                else
-                {
-                    $text = call_user_func($func,$text);
                 }
             }
         }
@@ -119,6 +112,21 @@ class Wizard extends Model
         ];
 		return $conf;
     }
-
-
+    public static function contentHandle($text,$action)
+    {
+        $side = Yii::$app->request->post('side');
+        $conf = self::codeFuncConf();
+        if(($func = $conf[$action][$side]))
+        {
+            if($func === 'json_decode')
+            {
+                $text =  call_user_func($func,$text,true);
+            }
+            else
+            {
+                $text = call_user_func($func,$text);
+            }
+        }
+       return $text;
+    }
 }

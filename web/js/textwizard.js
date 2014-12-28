@@ -33,6 +33,16 @@ var handleObj = {
 
     },
     /**
+     * 清空提示消息
+     */
+    alertInit: function(){
+        $('#fail_result_output_alert').css('display','none');
+        $('#success_result_output_alert').css('display','none');
+        var alert_id = (handleObj.statusCode !== 0) ? '#fail_result_output_alert' : '#success_result_output_alert';
+        $(alert_id).css('display','block');
+        $(alert_id).html(handleObj.alertMsg);
+    },
+    /**
      * json解析
      * @returns {number}
      */
@@ -69,7 +79,15 @@ var handleObj = {
             type:'POST',
             async:false,
             success: function(result){
-                handleObj.ret = result;
+                if(result.status == -1)
+                {//错误信息返回
+                    result.statusCode = result.status;
+                    handleObj.alertMsg = result.msg;
+                }
+                else if(result.status == 0)
+                {//正常返回
+                    handleObj.ret = result.data;
+                }
             }
         });
     },
@@ -120,9 +138,8 @@ function enclick(link,sside,execs)
     //取消遮罩
     myApp.hidePleaseWait();
     //成功、错误提示
-    var alert_id = (handleObj.statusCode !== 0) ? '#fail_result_output_alert' : '#success_result_output_alert';
-    $(alert_id).css('display','block');
-    $(alert_id).html(handleObj.alertMsg);
+    handleObj.alertInit();
+    //滑动滚动条
     element = $('#Canvas');
     offset = element.offset();
     offsetTop = offset.top - 125;

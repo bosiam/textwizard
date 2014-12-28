@@ -4,6 +4,7 @@ namespace app\models;
 
 use Curl\Curl;
 use Yii;
+use yii\base\ErrorException;
 use yii\base\Model;
 use Curl\Zebra_cURL;
 
@@ -13,6 +14,19 @@ use Curl\Zebra_cURL;
 class Wizard extends Model
 {
     const REQUEST_URL_TIMEOUT = 30;
+
+    /**
+     * ajax调用时返回错误码
+     * @var int
+     */
+    public static $statusCode = 0;
+    /**
+     * ajax调用时返回错误信息
+     * @var string
+     */
+    public static $msg = 'Congratulations!';
+
+    public static $errorMsg = '';
 
     /**
      * @return array the validation rules.
@@ -118,13 +132,22 @@ class Wizard extends Model
         $conf = self::codeFuncConf();
         if(($func = $conf[$action][$side]))
         {
-            if($func === 'json_decode')
+            try
             {
-                $text =  call_user_func($func,$text,true);
+                if($func === 'json_decode')
+                {
+                    $text =  call_user_func($func,$text,true);
+                }
+                else
+                {
+                    $text = call_user_func($func,$text);
+                }
             }
-            else
+            catch (ErrorException $e)
             {
-                $text = call_user_func($func,$text);
+                self::$statusCode = -1;
+                self::$msg = '输入数据合法！';
+                self::$errorMsg = $e->getName();
             }
         }
        return $text;

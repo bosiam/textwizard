@@ -106,7 +106,12 @@ class WizardController extends Controller
         {//json_encode
             $ret = json_encode($ret);
         }
-        echo $ret;
+        $ret = [
+            'status' => Wizard::$statusCode,
+            'msg' => Wizard::$msg,
+            'data' => $ret,
+        ];
+        echo json_encode($ret);
         exit;
     }
     private function _isSubmit()

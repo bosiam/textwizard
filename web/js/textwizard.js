@@ -54,6 +54,14 @@ var handleObj = {
         Process();
         return 1;
     },
+    msgpackde:function(){
+        this.isRaw = 3;
+        this.trequest();
+        this.rawOutput();
+        //格式化json文本
+        Process();
+        return 1;
+    },
     trequest:function(){
         $.ajax({
             url: this.link,

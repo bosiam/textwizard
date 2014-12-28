@@ -102,7 +102,7 @@ class WizardController extends Controller
         {//处理后的数据
             $ret = Wizard::contentHandle($ret,$action);
         }
-        if($raw >= 3)
+        if(Wizard::$statusCode == 0 && $raw >= 3)
         {//json_encode
             $ret = json_encode($ret);
         }

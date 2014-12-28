@@ -6,9 +6,9 @@ $this->title = $conf['title'];
 <div class="site-index">
             <div class="bs-callout bs-callout-info">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#paste_direct" role="tab" data-toggle="tab">直接粘贴</a></li>
+                    <li role="presentation" class="active"><a href="#paste_direct" role="tab" data-toggle="tab">输入框</a></li>
                     <!--<li role="presentation"><a href="#url_direct" role="tab" data-toggle="tab">URL</a></li>-->
-                    <li role="presentation"><a href="#file_direct" role="tab" data-toggle="tab">文件上传</a></li>
+                    <!--<li role="presentation"><a href="#file_direct" role="tab" data-toggle="tab">文件上传</a></li>-->
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
@@ -27,7 +27,7 @@ $this->title = $conf['title'];
             <div class="bs-callout bs-callout-info">
                 <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','de','<?=$conf['execs']?>');"><?=$conf['delabel']?></button>
                 <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','en','<?=$conf['execs']?>');"><?=$conf['enlabel']?></button>
-                <div id="ControlsRow">
+                <div id="ControlsRow" style="display: none">
                   <span id="TabSizeHolder">
                     tab size:
                     <select onchange="TabSizeChanged()" id="TabSize">

@@ -146,8 +146,9 @@ class Wizard extends Model
             catch (ErrorException $e)
             {
                 self::$statusCode = -1;
-                self::$msg = '输入数据合法！';
+                self::$msg = '输入数据不合法！';
                 self::$errorMsg = $e->getName();
+                $text = '';
             }
         }
        return $text;

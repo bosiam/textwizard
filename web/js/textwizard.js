@@ -32,6 +32,12 @@ var handleObj = {
     contentPlace:function(){
 
     },
+    attrsReset: function(){
+        this.statusCode = 0;
+        this.alertMsg = '';
+        this.isRaw = 1;
+        this.ret = '';
+    },
     /**
      * 清空提示消息
      */
@@ -79,15 +85,10 @@ var handleObj = {
             type:'POST',
             async:false,
             success: function(result){
-                if(result.status == -1)
-                {//错误信息返回
-                    result.statusCode = result.status;
-                    handleObj.alertMsg = result.msg;
-                }
-                else if(result.status == 0)
-                {//正常返回
-                    handleObj.ret = result.data;
-                }
+                result = $.parseJSON(result);
+                handleObj.statusCode = result.status;
+                handleObj.alertMsg = result.msg;
+                handleObj.ret = result.data;
             }
         });
     },
@@ -125,6 +126,7 @@ function enclick(link,sside,execs)
     var cid = a.attr('id');
     //拼装对应函数名
     var mapHandle= execs + sside;
+    handleObj.attrsReset();
     if(!handleObj.hasOwnProperty(mapHandle))
     {
         mapHandle = 'defau';//
@@ -187,6 +189,9 @@ function Process(){
         if(json == "") json = "\"\"";
         var obj = eval("["+json+"]");
         html = ProcessObject(obj[0], 0, false, false, false);
+        handleObj.alertMsg = "Congratulations!";
+        handleObj.statusCode = 0;
+        $('#ControlsRow').css('display','block');
         $id("Canvas").innerHTML = "<PRE class='CodeContainer'>"+html+"</PRE>";
     }catch(e){
         handleObj.alertMsg = "JSON is not well formated:\n"+e.message;

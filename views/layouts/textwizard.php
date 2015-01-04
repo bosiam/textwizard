@@ -40,9 +40,9 @@ AppAsset::register($this);
                         'url' =>'/wizard/index',
                         'items' => \app\models\Wizard::getMenuLabels(),
                     ],
-                    ['label' => '字符集表', 'url' => ['/charset/index']],
-                    ['label' => '在线程序执行', 'url' => ['/program/index']],
-                    ['label' => '文档转换', 'url' => ['/docConvert/index']],
+                    //['label' => '字符集表', 'url' => ['/charset/index']],
+                    //['label' => '在线程序执行', 'url' => ['/program/index']],
+                    //['label' => '文档转换', 'url' => ['/docConvert/index']],
                 ],
             ]);
             NavBar::end();
@@ -55,7 +55,7 @@ AppAsset::register($this);
             <?= $content ?>
         </div>
     </div>
-
+<!--
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
@@ -67,6 +67,7 @@ AppAsset::register($this);
             <i class="fa fa-2x fa-arrow-circle-up">︿</i>
         </span>
     </div>
+-->
 
 <?php $this->endBody() ?>
 </body>

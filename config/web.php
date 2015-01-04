@@ -38,9 +38,9 @@ $config = [
             ],
         ],
         'urlManager' => [
-            //'enablePrettyUrl' => 1,
-			//'showScriptName' => 0 ,
-			//'suffix' => '.html'
+            'enablePrettyUrl' => 1,
+			'showScriptName' => 0 ,
+			'suffix' => '.html'
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],

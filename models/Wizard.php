@@ -53,6 +53,7 @@ class Wizard extends Model
                 'url' => Yii::$app->urlManager->createUrl('wizard/json'),
                 'title' =>'在线编码|json编码|json解码|json_encode|json_decode',
                 'head' => 'json格式在线解析',
+                'description' =>'好用的在线json解析工具|快速json格式解析|json编码|json解码|json_encode|json_decode',
                 'keywords' => '',
                 'enlabel' => 'json_encode编码',
                 'delabel' => 'json_decode解码',
@@ -62,6 +63,7 @@ class Wizard extends Model
                 'label' => 'serialize序列化',
                 'url' => Yii::$app->urlManager->createUrl('wizard/index'),
                 'title' => '在线序列化|serialize序列化|unserialize反序列化|serialize|unserialize',
+                'description' => '好用的在线序列化工具|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'head' => 'serialize在线序列化',
                 'keywords' =>'',
                 'enlabel' => 'serialize序列化',
@@ -74,6 +76,7 @@ class Wizard extends Model
                 'title' => '在线序列化|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
                 'head' => 'msgapck在线序列化',
                 'keywords' =>'',
+                'description' => '好用的在线序列化工具|msgpack格式快速解析|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
                 'enlabel' => 'msgpack_pack序列化',
                 'delabel' => 'msgpack_unpack反序列化',
                 'execs' => 'msgpack'

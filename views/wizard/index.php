@@ -1,6 +1,10 @@
 <?php
 /* @var $this yii\web\View */
 $this->title = $conf['title'];
+$this->metaTags = [
+    '<meta name="keywords" content="'.$conf['keywords'].'">',
+    '<meta name="description" content="'.$conf['description'].'">',
+]
 ?>
 <h1><?=$conf['head']?></h1>
 <div class="site-index">

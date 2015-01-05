@@ -47,12 +47,17 @@ class WizardController extends Controller
             ],
         ];
     }
-    public function actionCommonRender($type='serialize',$view='index')
+    public function actionCommonRender($type='serialize',$view='text')
     {
         $config = Wizard::getCodeType($type);
         return $this->render($view,['conf' => $config]);
     }
     public function actionIndex()
+    {
+        $conf = Wizard::genIndexInfo();
+        return $this->render('index',['conf'=>$conf]);
+    }
+    public function actionSerialize()
     {
         if($this->_isSubmit())
         {
@@ -61,7 +66,7 @@ class WizardController extends Controller
         }
         else
         {
-            return $this->actionCommonRender();
+            return $this->actionCommonRender('serialize');
         }
     }
     public function actionJson()

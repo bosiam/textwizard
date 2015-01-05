@@ -55,11 +55,11 @@ AppAsset::register($this);
             <?= $content ?>
         </div>
     </div>
-<!--
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
+            <p class="pull-left">
+                © 2014-2015 textwizard.cn 版权所有 ICP证：京ICP备15000031号
+            </p>
         </div>
     </footer>
     <div class="scroll-top-wrapper ">
@@ -67,7 +67,6 @@ AppAsset::register($this);
             <i class="fa fa-2x fa-arrow-circle-up">︿</i>
         </span>
     </div>
--->
 
 <?php $this->endBody() ?>
 </body>

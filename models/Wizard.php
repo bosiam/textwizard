@@ -45,7 +45,7 @@ class Wizard extends Model
         ];
     }
 
-    public static function CodeType()
+    public static function codeType()
     {
         $conf = [
             'json' =>[
@@ -61,7 +61,7 @@ class Wizard extends Model
             ],
             'serialize' => [
                 'label' => 'serialize序列化',
-                'url' => Yii::$app->urlManager->createUrl('wizard/index'),
+                'url' => Yii::$app->urlManager->createUrl('wizard/serialize'),
                 'title' => '在线序列化|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'description' => '好用的在线序列化工具|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'head' => 'serialize在线序列化',
@@ -86,13 +86,13 @@ class Wizard extends Model
     }
     public static function getCodeType($type='json')
     {
-        $types = self::CodeType();
+        $types = self::codeType();
         return isset($types[$type]) ? $types[$type] : $types['default'];
     }
     public static function getMenuLabels()
     {
         $labels = [];
-        foreach(self::CodeType() as $conf)
+        foreach(self::codeType() as $conf)
         {
             $labels[] = $conf;
         }
@@ -155,5 +155,23 @@ class Wizard extends Model
             }
         }
        return $text;
+    }
+    public static function genIndexInfo()
+    {
+        $tools = self::codeType();
+        $keywords = '';
+        $description = '';
+        foreach($tools as $t)
+        {
+            $keywords .= '|'.$t['keywords'];
+            $description .= ','.$t['description'];
+        }
+        return [
+            'title' => '编码助手|textwizard.cn - 最好用的在线文本编码、解码、解析、序列化工具',
+            'keywords' => trim($keywords,'|'),
+            'description' => trim($description,','),
+            'head' => '工具大全',
+            'intro' => $tools,
+        ];
     }
 }

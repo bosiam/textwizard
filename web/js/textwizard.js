@@ -5,7 +5,7 @@
 
 var myApp;
 myApp = myApp || (function () {
-    var pleaseWaitDiv = $('<div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-striped"><span class="sr-only">60% Complete</span></div>');
+    var pleaseWaitDiv = $('<div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-striped"></div>');
         return {
                 showPleaseWait: function() {
                 pleaseWaitDiv.modal();
@@ -170,8 +170,8 @@ function scrollToTop() {
 }
 /*json format raw js code from http://www.bodurov.com/JsonFormatter/*/
 window.SINGLE_TAB = "  ";
-window.ImgCollapsed = "images/Collapsed.gif";
-window.ImgExpanded = "images/Expanded.gif";
+window.ImgCollapsed = "../images/Collapsed.gif";
+window.ImgExpanded = "../images/Expanded.gif";
 window.QuoteKeys = true;
 function $id(id){ return document.getElementById(id); }
 function IsArray(obj) {

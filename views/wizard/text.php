@@ -29,8 +29,8 @@ $this->metaTags = [
                 </div>
             </div>
             <div class="bs-callout bs-callout-info">
-                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','de','<?=$conf['execs']?>');"><?=$conf['delabel']?></button>
-                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','en','<?=$conf['execs']?>');"><?=$conf['enlabel']?></button>
+                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','<?=$conf['first']['direction']?>','<?=$conf['execs']?>');"><?=$conf['first']['label']?></button>
+                <button class="btn btn-primary" type="button" onclick="enclick('<?=$conf['url']?>','<?=$conf['second']['direction']?>','<?=$conf['execs']?>');"><?=$conf['second']['label']?></button>
                 <div id="ControlsRow" style="display: none">
                   <span id="TabSizeHolder">
                     tab size:

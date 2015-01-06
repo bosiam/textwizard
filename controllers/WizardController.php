@@ -61,8 +61,7 @@ class WizardController extends Controller
     {
         if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent();
-            $this->w($output,'serialize');
+            $this->w('serialize');
         }
         else
         {
@@ -73,8 +72,7 @@ class WizardController extends Controller
     {
         if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent();
-            $this->w($output,'json');
+            $this->w('json');
         }
         else
         {
@@ -85,23 +83,38 @@ class WizardController extends Controller
     {
         if($this->_isSubmit())
         {
-            $output = Wizard::getCommonContent();
-            $this->w($output,'msgpack');
+            $this->w('msgpack');
         }
         else
         {
             return $this->actionCommonRender('msgpack');
         }
     }
-	public function actionTest()
-	{
-        $a = new Curl();
-        $b = $a->get('http://api.sina.cn/sinago/list.json?channel=news_toutiao&adid=b9c8c4bf3ff9e496fb409dac1e89bdae&p=1&wm=b207&from=6042195012&chwm=3022_0001&oldchwm=3022_0001&imei=863020014800696&uid=ee94b62b651df812');
-
-		echo 'haha';
-	}
-    public function w($ret,$action)
+    public function actionUrlencode()
     {
+        if($this->_isSubmit())
+        {
+            $this->w('urlencode');
+        }
+        else
+        {
+            return $this->actionCommonRender('urlencode');
+        }
+    }
+    public function actionBase64()
+    {
+        if($this->_isSubmit())
+        {
+            $this->w('base64');
+        }
+        else
+        {
+            return $this->actionCommonRender('base64');
+        }
+    }
+    public function w($action)
+    {
+        $ret = Wizard::getCommonContent($action);
         $raw = Yii::$app->request->post('isRaw');
         if($raw >= 2)
         {//处理后的数据

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Wizard;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -93,8 +94,24 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    public function actionSerialize()
+    public function actionGensitemap()
     {
-        return $this->render('serialize');
+        $filename = '../sitemap.xml';
+        $data = [];
+        $configs = Wizard::codeType();
+        $host = 'http://textwizard.cn';
+        foreach($configs as $config)
+        {
+            $data[] = [
+                'loc' => $host.$config['url'],
+                'lastmod' => date('Y-m-d'),
+                'changefreq' => 'always',
+                'priority' => '1.0'
+            ];
+        }
+        $xml = Wizard::xml_encode($data,'urlset','url','','');//生成xml格式
+        file_put_contents($filename,$xml);
+        exit;
     }
+
 }

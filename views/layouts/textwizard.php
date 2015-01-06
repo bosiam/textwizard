@@ -56,8 +56,8 @@ AppAsset::register($this);
         </div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <p class="pull-left">
+        <div class="container" style="line-height: 0px;padding-top: 5px">
+            <p style="margin: 0px">
                 © 2014-2015 textwizard.cn 版权所有 ICP证：京ICP备15000031号
             </p>
         </div>

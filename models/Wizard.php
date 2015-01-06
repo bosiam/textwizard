@@ -55,8 +55,8 @@ class Wizard extends Model
                 'head' => 'json格式在线解析',
                 'description' =>'好用的在线json解析工具|快速json格式解析|json编码|json解码|json_encode|json_decode',
                 'keywords' => '在线、json_encode、json_decode、编码解码',
-                'enlabel' => 'json_encode编码',
-                'delabel' => 'json_decode解码',
+                'second' => ['direction'=>'en','label'=>'json_encode编码'],
+                'first' => ['direction'=>'de','label'=>'json_decode解码'],
                 'execs' => 'json'
             ],
             'serialize' => [
@@ -66,8 +66,8 @@ class Wizard extends Model
                 'description' => '好用的在线序列化工具|serialize序列化|unserialize反序列化|serialize|unserialize',
                 'head' => 'serialize在线序列化',
                 'keywords' =>'在线序列化、serialize、unserialize',
-                'enlabel' => 'serialize序列化',
-                'delabel' => 'unserialize反序列化',
+                'second' => ['direction'=>'en','label'=>'serialize序列化'],
+                'first' => ['direction'=>'de','label'=>'unserialize反序列化'],
                 'execs' => 'serialize'
             ],
             'msgpack' => [
@@ -77,9 +77,33 @@ class Wizard extends Model
                 'head' => 'msgapck在线序列化',
                 'keywords' =>'在线序列化、msgpack_pack序列化、msgpack_unpack反序列化',
                 'description' => '好用的在线序列化工具|msgpack格式快速解析|msgpack_pack序列化|msgpack_unpack反序列化|msgpack_pack|msgpack_unpack',
-                'enlabel' => 'msgpack_pack序列化',
-                'delabel' => 'msgpack_unpack反序列化',
+                'second' => ['direction'=>'en','label'=>'msgpack_pack序列化'],
+                'first' => ['direction'=>'de','label'=>'msgpack_unpack反序列化'],
                 'execs' => 'msgpack'
+            ],
+            'urlencode' => [
+                'label' => 'URL编码',
+                'url' => Yii::$app->urlManager->createUrl('wizard/urlencode'),
+                'title' => '在线URL编码、解码|url编码|url解码|urlencode|urldecode',
+                'head' => 'url在线编码解码',
+                'keywords' =>'URL在线编码解码、urldecode、urlencode',
+                'description' => '好用的URL在线编码解码、urldecode、urlencode',
+                'first' => ['direction'=>'en','label'=>'URL编码'],
+                'second' => ['direction'=>'de','label'=>'URL解码'],
+                'execs' => 'urlencode',
+                'is_Urlfetch' => 0,
+            ],
+            'base64' => [
+                'label' => 'base64编码',
+                'url' => Yii::$app->urlManager->createUrl('wizard/base64'),
+                'title' => '在线base64编码、解码|base64编码|base64解码|base64_encode|base64_decode',
+                'head' => 'base64在线编码解码',
+                'keywords' =>'base64在线编码解码、base64_decode、base64_encode',
+                'description' => '好用的base64在线编码解码、base64_decode、base64_encode',
+                'first' => ['direction'=>'en','label'=>'base64编码'],
+                'second' => ['direction'=>'de','label'=>'base64解码'],
+                'execs' => 'base64',
+                'is_Urlfetch' => 0,
             ]
         ];
         return $conf;
@@ -98,12 +122,13 @@ class Wizard extends Model
         }
         return $labels;
     }
-    public static function getCommonContent()
+    public static function getCommonContent($action)
     {
         $text = Yii::$app->request->post('text');
         if($text)
         {
-            if(preg_match('/^http:\/\//',$text))
+            $conf = self::getCodeType($action);
+            if(!isset($conf['is_Urlfetch']) && preg_match('/^http:\/\//',$text))
             {//通过URL获取数据
                 $curl = new Curl();
                 $curl->setOpt(CURLOPT_TIMEOUT,Wizard::REQUEST_URL_TIMEOUT);
@@ -126,6 +151,8 @@ class Wizard extends Model
             'serialize' => ['en'=>'serialize','de'=>'unserialize'],
             'msgpack' => ['en'=>'msgpack_pack','de'=>'msgpack_unpack'],
             'json' => ['en'=>'json_encode','de'=>'json_decode'],
+            'urlencode' => ['en'=>'urlencode','de'=>'urldecode'],
+            'base64' => ['en'=>'base64_encode','de'=>'base64_decode'],
         ];
 		return $conf;
     }
@@ -173,5 +200,51 @@ class Wizard extends Model
             'head' => '工具大全',
             'intro' => $tools,
         ];
+    }
+    /**
+     * XML编码
+     * @param mixed $data 数据
+     * @param string $root 根节点名
+     * @param string $item 数字索引的子节点名
+     * @param string $attr 根节点属性
+     * @param string $id   数字索引子节点key转换的属性名
+     * @param string $encoding 数据编码
+     * @return string
+     */
+    public static function xml_encode($data, $root='think', $item='item', $attr='', $id='id', $encoding='utf-8') {
+        if(is_array($attr)){
+            $_attr = array();
+            foreach ($attr as $key => $value) {
+                $_attr[] = "{$key}=\"{$value}\"";
+            }
+            $attr = implode(' ', $_attr);
+        }
+        $attr   = trim($attr);
+        $attr   = empty($attr) ? '' : " {$attr}";
+        $xml    = "<?xml version=\"1.0\" encoding=\"{$encoding}\"?>";
+        $xml   .= "<{$root}{$attr}>";
+        $xml   .= self::data_to_xml($data, $item, $id);
+        $xml   .= "</{$root}>";
+        return $xml;
+    }
+    /**
+     * 数据XML编码
+     * @param mixed  $data 数据
+     * @param string $item 数字索引时的节点名称
+     * @param string $id   数字索引key转换为的属性名
+     * @return string
+     */
+    public static function data_to_xml($data, $item='item', $id='id') {
+        $xml = $attr = '';
+        foreach ($data as $key => $val) {
+            if(is_numeric($key)){
+                $id && $attr = " {$id}=\"{$key}\"";
+                $key  = $item;
+            }
+            $xml    .=  "<{$key}{$attr}>";
+            $xml    .=  (is_array($val) || is_object($val)) ? self::data_to_xml($val, $item, $id) : $val;
+            $xml    .=  "</{$key}>";
+        }
+        return $xml;
     }
 }

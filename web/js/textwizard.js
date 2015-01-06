@@ -59,7 +59,7 @@ var handleObj = {
             this.rawOutput();
         }
         //格式化json文本
-        Process();
+        this.process();
         return 1;
     },
     serializede:function(){
@@ -67,7 +67,7 @@ var handleObj = {
         this.trequest();
         this.rawOutput();
         //格式化json文本
-        Process();
+        this.process();
         return 1;
     },
     msgpackde:function(){
@@ -75,7 +75,6 @@ var handleObj = {
         this.trequest();
         this.rawOutput();
         //格式化json文本
-        Process();
         return 1;
     },
     trequest:function(){
@@ -104,6 +103,12 @@ var handleObj = {
     },
     rawOutput: function(){
         $('#RawJson').val(this.ret);
+    },
+    process: function(){
+        if(this.statusCode === 0)
+        {
+            Process();
+        }
     }
 }
 /**

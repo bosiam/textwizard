@@ -96,7 +96,7 @@ class SiteController extends Controller
     }
     public function actionGensitemap()
     {
-        $filename = '../sitemap.xml';
+        $filename = '../web/sitemap.xml';
         $data = [];
         $configs = Wizard::codeType();
         $host = 'http://textwizard.cn';
